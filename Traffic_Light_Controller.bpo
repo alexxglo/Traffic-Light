@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="25">
+    <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/TrafficLightProject/Traffic_Light_Controller.bpo|org.eventb.core.poFile#Traffic_Light_Controller|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="25">
+        <org.eventb.core.poIdentifier name="red" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="button" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="green" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="amber" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="INITIALISATION/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TrafficLightProject/Traffic_Light_Controller.bpo|org.eventb.core.poFile#Traffic_Light_Controller|org.eventb.core.poPredicateSet#EVTALLHYPbuttoo"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="¬(TRUE=TRUE∧FALSE=TRUE)∧¬(TRUE=TRUE∧FALSE=TRUE)∧¬(FALSE=TRUE∧FALSE=TRUE)" org.eventb.core.source="/TrafficLightProject/Traffic_Light_Controller.bum|org.eventb.core.machineFile#Traffic_Light_Controller|org.eventb.core.invariant#0"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TrafficLightProject/Traffic_Light_Controller.bum|org.eventb.core.machineFile#Traffic_Light_Controller|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TrafficLightProject/Traffic_Light_Controller.bum|org.eventb.core.machineFile#Traffic_Light_Controller|org.eventb.core.invariant#0"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/TrafficLightProject/Traffic_Light_Controller.bpo|org.eventb.core.poFile#Traffic_Light_Controller|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/TrafficLightProject/Traffic_Light_Controller.bpo|org.eventb.core.poFile#Traffic_Light_Controller|org.eventb.core.poSequent#INITIALISATION\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TrafficLightProject/Traffic_Light_Controller.bpo|org.eventb.core.poFile#Traffic_Light_Controller|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTbuttoo" org.eventb.core.parentSet="/TrafficLightProject/Traffic_Light_Controller.bpo|org.eventb.core.poFile#Traffic_Light_Controller|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="25">
+        <org.eventb.core.poIdentifier name="button'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="green'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="amber'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="red'" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPbuttoo" org.eventb.core.parentSet="/TrafficLightProject/Traffic_Light_Controller.bpo|org.eventb.core.poFile#Traffic_Light_Controller|org.eventb.core.poPredicateSet#EVTIDENTbuttoo" org.eventb.core.poStamp="25"/>
+    <org.eventb.core.poPredicateSet name="EVTIDENTbuttop" org.eventb.core.parentSet="/TrafficLightProject/Traffic_Light_Controller.bpo|org.eventb.core.poFile#Traffic_Light_Controller|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="25">
+        <org.eventb.core.poIdentifier name="button'" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPbuttop" org.eventb.core.parentSet="/TrafficLightProject/Traffic_Light_Controller.bpo|org.eventb.core.poFile#Traffic_Light_Controller|org.eventb.core.poPredicateSet#EVTIDENTbuttop" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="button=FALSE∧green=FALSE" org.eventb.core.source="/TrafficLightProject/Traffic_Light_Controller.bum|org.eventb.core.machineFile#Traffic_Light_Controller|org.eventb.core.event#1|org.eventb.core.guard#'"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="Turn_Green/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TrafficLightProject/Traffic_Light_Controller.bpo|org.eventb.core.poFile#Traffic_Light_Controller|org.eventb.core.poPredicateSet#EVTALLHYPbuttoq"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="¬(TRUE=TRUE∧FALSE=TRUE)∧¬(TRUE=TRUE∧FALSE=TRUE)∧¬(FALSE=TRUE∧FALSE=TRUE)" org.eventb.core.source="/TrafficLightProject/Traffic_Light_Controller.bum|org.eventb.core.machineFile#Traffic_Light_Controller|org.eventb.core.invariant#0"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TrafficLightProject/Traffic_Light_Controller.bum|org.eventb.core.machineFile#Traffic_Light_Controller|org.eventb.core.event#2"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TrafficLightProject/Traffic_Light_Controller.bum|org.eventb.core.machineFile#Traffic_Light_Controller|org.eventb.core.invariant#0"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/TrafficLightProject/Traffic_Light_Controller.bpo|org.eventb.core.poFile#Traffic_Light_Controller|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/TrafficLightProject/Traffic_Light_Controller.bpo|org.eventb.core.poFile#Traffic_Light_Controller|org.eventb.core.poSequent#Turn_Green\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TrafficLightProject/Traffic_Light_Controller.bpo|org.eventb.core.poFile#Traffic_Light_Controller|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTbuttoq" org.eventb.core.parentSet="/TrafficLightProject/Traffic_Light_Controller.bpo|org.eventb.core.poFile#Traffic_Light_Controller|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="25">
+        <org.eventb.core.poIdentifier name="button'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="green'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="amber'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="red'" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPbuttoq" org.eventb.core.parentSet="/TrafficLightProject/Traffic_Light_Controller.bpo|org.eventb.core.poFile#Traffic_Light_Controller|org.eventb.core.poPredicateSet#EVTIDENTbuttoq" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="button=TRUE∧green=FALSE" org.eventb.core.source="/TrafficLightProject/Traffic_Light_Controller.bum|org.eventb.core.machineFile#Traffic_Light_Controller|org.eventb.core.event#2|org.eventb.core.guard#'"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="Turn_Amber/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TrafficLightProject/Traffic_Light_Controller.bpo|org.eventb.core.poFile#Traffic_Light_Controller|org.eventb.core.poPredicateSet#EVTALLHYPbuttor"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="¬(FALSE=TRUE∧TRUE=TRUE)∧¬(FALSE=TRUE∧FALSE=TRUE)∧¬(TRUE=TRUE∧FALSE=TRUE)" org.eventb.core.source="/TrafficLightProject/Traffic_Light_Controller.bum|org.eventb.core.machineFile#Traffic_Light_Controller|org.eventb.core.invariant#0"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TrafficLightProject/Traffic_Light_Controller.bum|org.eventb.core.machineFile#Traffic_Light_Controller|org.eventb.core.event#3"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TrafficLightProject/Traffic_Light_Controller.bum|org.eventb.core.machineFile#Traffic_Light_Controller|org.eventb.core.invariant#0"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/TrafficLightProject/Traffic_Light_Controller.bpo|org.eventb.core.poFile#Traffic_Light_Controller|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/TrafficLightProject/Traffic_Light_Controller.bpo|org.eventb.core.poFile#Traffic_Light_Controller|org.eventb.core.poSequent#Turn_Amber\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TrafficLightProject/Traffic_Light_Controller.bpo|org.eventb.core.poFile#Traffic_Light_Controller|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTbuttor" org.eventb.core.parentSet="/TrafficLightProject/Traffic_Light_Controller.bpo|org.eventb.core.poFile#Traffic_Light_Controller|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="25">
+        <org.eventb.core.poIdentifier name="green'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="amber'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="red'" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPbuttor" org.eventb.core.parentSet="/TrafficLightProject/Traffic_Light_Controller.bpo|org.eventb.core.poFile#Traffic_Light_Controller|org.eventb.core.poPredicateSet#EVTIDENTbuttor" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="green=TRUE∧button=FALSE" org.eventb.core.source="/TrafficLightProject/Traffic_Light_Controller.bum|org.eventb.core.machineFile#Traffic_Light_Controller|org.eventb.core.event#3|org.eventb.core.guard#'"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="Turn_Red/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/TrafficLightProject/Traffic_Light_Controller.bpo|org.eventb.core.poFile#Traffic_Light_Controller|org.eventb.core.poPredicateSet#EVTALLHYPbuttos"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="¬(FALSE=TRUE∧FALSE=TRUE)∧¬(FALSE=TRUE∧TRUE=TRUE)∧¬(FALSE=TRUE∧TRUE=TRUE)" org.eventb.core.source="/TrafficLightProject/Traffic_Light_Controller.bum|org.eventb.core.machineFile#Traffic_Light_Controller|org.eventb.core.invariant#0"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TrafficLightProject/Traffic_Light_Controller.bum|org.eventb.core.machineFile#Traffic_Light_Controller|org.eventb.core.event#4"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/TrafficLightProject/Traffic_Light_Controller.bum|org.eventb.core.machineFile#Traffic_Light_Controller|org.eventb.core.invariant#0"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/TrafficLightProject/Traffic_Light_Controller.bpo|org.eventb.core.poFile#Traffic_Light_Controller|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/TrafficLightProject/Traffic_Light_Controller.bpo|org.eventb.core.poFile#Traffic_Light_Controller|org.eventb.core.poSequent#Turn_Red\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/TrafficLightProject/Traffic_Light_Controller.bpo|org.eventb.core.poFile#Traffic_Light_Controller|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTbuttos" org.eventb.core.parentSet="/TrafficLightProject/Traffic_Light_Controller.bpo|org.eventb.core.poFile#Traffic_Light_Controller|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="25">
+        <org.eventb.core.poIdentifier name="green'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="amber'" org.eventb.core.type="BOOL"/>
+        <org.eventb.core.poIdentifier name="red'" org.eventb.core.type="BOOL"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPbuttos" org.eventb.core.parentSet="/TrafficLightProject/Traffic_Light_Controller.bpo|org.eventb.core.poFile#Traffic_Light_Controller|org.eventb.core.poPredicateSet#EVTIDENTbuttos" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="amber=TRUE" org.eventb.core.source="/TrafficLightProject/Traffic_Light_Controller.bum|org.eventb.core.machineFile#Traffic_Light_Controller|org.eventb.core.event#4|org.eventb.core.guard#'"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/TrafficLightProject/Traffic_Light_Controller.bpo|org.eventb.core.poFile#Traffic_Light_Controller|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="25">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="green∈BOOL" org.eventb.core.source="/TrafficLightProject/Traffic_Light_Controller.bum|org.eventb.core.machineFile#Traffic_Light_Controller|org.eventb.core.invariant#)"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="amber∈BOOL" org.eventb.core.source="/TrafficLightProject/Traffic_Light_Controller.bum|org.eventb.core.machineFile#Traffic_Light_Controller|org.eventb.core.invariant#-"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="red∈BOOL" org.eventb.core.source="/TrafficLightProject/Traffic_Light_Controller.bum|org.eventb.core.machineFile#Traffic_Light_Controller|org.eventb.core.invariant#."/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="button∈BOOL" org.eventb.core.source="/TrafficLightProject/Traffic_Light_Controller.bum|org.eventb.core.machineFile#Traffic_Light_Controller|org.eventb.core.invariant#\/"/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="¬(green=TRUE∧amber=TRUE)∧¬(green=TRUE∧red=TRUE)∧¬(amber=TRUE∧red=TRUE)" org.eventb.core.source="/TrafficLightProject/Traffic_Light_Controller.bum|org.eventb.core.machineFile#Traffic_Light_Controller|org.eventb.core.invariant#0"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

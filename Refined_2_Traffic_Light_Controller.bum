@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+    <org.eventb.core.refinesMachine name="'" org.eventb.core.target="Traffic_Light_Controller"/>
+    <org.eventb.core.variable name="(" org.eventb.core.identifier="green"/>
+    <org.eventb.core.variable name="*" org.eventb.core.identifier="amber"/>
+    <org.eventb.core.variable name="+" org.eventb.core.identifier="red"/>
+    <org.eventb.core.variable name="," org.eventb.core.identifier="button"/>
+    <org.eventb.core.event name="-" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION"/>
+    <org.eventb.core.event name="." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Press_Button">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="Press_Button"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="/" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Turn_Green">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="Turn_Green"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="0" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Turn_Amber">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="Turn_Amber"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="1" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Turn_Red">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="Turn_Red"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="2" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Refined_Turn_Green">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="Turn_Green"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="green = TRUE ∧ amber = FALSE ∧ red = FALSE"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="amber, button ≔ TRUE, FALSE" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+</org.eventb.core.machineFile>
